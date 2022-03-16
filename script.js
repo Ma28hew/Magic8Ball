@@ -2,46 +2,30 @@
 
 // Variables to Store HTML Elements
 let Magic8BallEl = document.getElementById("Magic8Ball");
-let results = document.getElementById("result");
+let resultsEl = document.getElementById("result");
 
 // Event Listeners
 Magic8BallEl.addEventListener("click", result);
-
-// Global Variables
-
-let Ans1 = "Without a Doubt."
-let Ans2 = "As I see it, yes."
-let Ans3 = "Concentrate and ask again."
-let Ans4 = "Don't count on it"
-let Ans5 = "Outlook not so good."
-
 
 // Event Functions
 function result() {
 
     // Process
-
+    let results = resultsEl.value;
 
 
     let randNum = Math.random();
     console.log(randNum);
 
     if (randNum < 0.2) {
-        results.innerHTML = Ans1
+        results.innerHTML = "Without a Doubt."
     } else if (randNum < 0.4) {
-        results.innerHTML = Ans2
+        results.innerHTML = "As I see it, yes."
     } else if (randNum < 0.6) {
-        results.innerHTML = Ans3
+        results.innerHTML = "Concentrate and ask again."
     } else if (randNum < 0.8) {
-        results.innerHTML = Ans4
+        results.innerHTML = "Don't count on it"
     } else {
-        results.innerHTML = Ans5
+        results.innerHTML = "Outlook not so good."
     }
-
-
-
-
-
-    // Output
-    document.getElementById("result").innerHTML = results;
 }

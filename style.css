@@ -19,3 +19,7 @@ body {
 #result {
     color: green;
 }
+
+input {
+    width: 300px;
+}
