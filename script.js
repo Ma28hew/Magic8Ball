@@ -17,20 +17,12 @@ function result() {
     if (inpEl === "") {
         resultsEl.innerHTML = "Please ask a question."
     } else if (inpEl === "do you work" || inpEl === "does a magic 8 ball really work?") {
-        resultsEl = "How dare you doubt me!"
-
-
-
-
-
-
-
+        resultsEl.innerHTML = "How dare you doubt me!"
+    } else if (inpEl === "is javascript awesome?") {
+        resultsEl.innerHTML = "Of Course"
     } else {
-
-
         let randNum = Math.random();
         console.log(randNum);
-
         if (randNum < 0.2) {
             resultsEl.innerHTML = "Without a Doubt."
         } else if (randNum < 0.4) {
