@@ -1,5 +1,5 @@
 html {
-    background: url("Images/Space.webp") center no-repeat fixed;
+    background: url("Images/ClashBackground.webp") center no-repeat fixed;
     background-size: cover;
 }
 
@@ -9,17 +9,42 @@ body {
     padding: 50px 100px;
     margin: 25px auto;
     border-radius: 25px;
-    font-family: monospace;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center
 }
 
-#Magic8Ball:hover {
-    cursor: pointer;
+h1 {
+    font-size: 30px;
 }
 
-#result {
-    color: green;
+#RoyalRecruitsCard {
+    width: 105px;
 }
 
-input {
-    width: 300px;
+#RoyalHogsCard {
+    width: 100px;
+}
+
+#ZappiesCard {
+    width: 105px;
+}
+
+#FireballCard {
+    width: 105px;
+}
+
+#IceSpiritCard {
+    width: 105px;
+}
+
+#GoblinCageCard {
+    width: 100px;
+}
+
+#FlyingMachineCard {
+    width: 100px;
+}
+
+#BarbarianBarrelCard {
+    width: 100px;
 }
